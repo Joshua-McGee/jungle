@@ -7,4 +7,7 @@ class Order < ActiveRecord::Base
 
   validates :stripe_charge_id, presence: true
 
+  # def products
+  #   line_items.map { |li| li.product }
+  # end
 end

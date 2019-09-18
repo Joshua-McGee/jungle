@@ -19,6 +19,10 @@ class OrdersController < ApplicationController
     redirect_to cart_path, flash: { error: e.message }
   end
 
+  def add_item
+    product_id = params[:product_id].to_s
+  end
+
   private
 
   def empty_cart!
