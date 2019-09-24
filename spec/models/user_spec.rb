@@ -31,4 +31,30 @@ RSpec.describe User, type: :model do
     it { should_not be_valid }
   end
 
+  describe '.authenticate_with_credentials' do
+    # examples for this class method here
+    before do
+      User.create(first_name: "Joshua", last_name: "McGee", email: "TEST@TEST.com", password: "123", password_confirmation: "123")
+      end
+
+    it "should be valid and return a user" do
+      user = User.authenticate_with_credentials("TEST@TEST.com", "123")
+      expect(user).to_not be_nil
+    end
+
+    it "should still authenticate with spaces" do 
+      user = User.authenticate_with_credentials(" TEST@TEST.com ", "123")
+      expect(user).to_not be_nil
+    end
+
+    it "should still authenticate if user types wrong case for email" do
+      user = User.authenticate_with_credentials("TeSt@TeST.Com", "123")
+      expect(user).to_not be_nil
+    end
+    # it "should should not log in with wrong credential (email)" do
+    #   user = User.authenticate_with_credentials("notanemail@TeST.Com", "123")
+    #   expect(user).to be_nil
+    # end
+  end
+
 end
