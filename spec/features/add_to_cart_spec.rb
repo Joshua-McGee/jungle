@@ -23,8 +23,9 @@ RSpec.feature "User navigates from home page to product details page", type: :fe
     # CHECK IF PATH HAS A PRODUCT
     expect(page).to have_css 'article.product', count: 10
     # CLICK ON THE FIRST PRODUCT ELEMENT AND NAVIGATE TO PRODUCT DETAILS PAGE
-    first('.product img').click
+    first('.product button').click
     sleep 2
+    page.has_content?('(1)')
     # CHECK IF THE ROOT HAS UPDATED via screenshot
     save_screenshot
   end
