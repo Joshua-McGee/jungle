@@ -29,11 +29,11 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Screenshots
 
-!["Home page"]()
-!["my cart"]()
-!["checkout with credit card"]()
-!["order confirmation"]()
+!["Home page"](https://github.com/Joshua-McGee/jungle/blob/master/docs/home%20page.png?raw=true)
+!["my cart"](https://github.com/Joshua-McGee/jungle/blob/master/docs/my%20cart.png?raw=true)
+!["checkout with credit card"](https://github.com/Joshua-McGee/jungle/blob/master/docs/checkout%20credit%20card.png?raw=true)
+!["order confirmation"](https://github.com/Joshua-McGee/jungle/blob/master/docs/order%20confirmation.png?raw=true)
 
 ## Screenshots Admin
-!["Create product"]()
-!["View all products"]()
+!["View all products"](https://github.com/Joshua-McGee/jungle/blob/master/docs/admin%20product%20controls.png?raw=true)
+!["Create product"](https://github.com/Joshua-McGee/jungle/blob/master/docs/admin%20create%20product.png?raw=true)
