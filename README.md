@@ -27,6 +27,13 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * PostgreSQL 9.x
 * Stripe
 
+## Login / Logout functionality
+
+* When signing up I created a validator for passwords to contain at least 3 characters but never implimented an error message. Passwords must be at least 3 characters I suggest using the password `test`.
+* I purposfully made it so you could checkout and do everything without being required to login, this is not a bug. (aside from admin)
+* Login (if invalid) will just refresh the page (no error message/page was implimented)
+* once you have logged in once(the first time) for admin you will need to clear your browser if you want this login form to show up again.
+
 ## Screenshots
 
 !["Home page"](https://github.com/Joshua-McGee/jungle/blob/master/docs/home%20page.png?raw=true)
